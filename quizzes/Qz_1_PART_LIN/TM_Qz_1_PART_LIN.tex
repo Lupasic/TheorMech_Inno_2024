@@ -1,0 +1,207 @@
+\documentclass[aspectratio=169,xcolor=table,10pt, notes=hide]{beamer}
+
+
+\usetheme[faculty=phil]{fibeamer}
+\usepackage{polyglossia}
+
+\setmainlanguage{russian} %% main locale instead of `english`, you
+%% can typeset the presentation in either Czech or Slovak,
+%% respectively.
+\setotherlanguages{english} %% The additional keys allow
+%%
+%%   \begin{otherlanguage}{czech}   ... \end{otherlanguage}
+%%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
+%%
+%% These macros specify information about the presentation
+\title[Theoretical Mechanics]{Theoretical Mechanics, Quiz 1: PART LIN} %% that will be typeset on the
+\subtitle{Particle kinematics \\ Linear Algebra \\ \  } %% title page.
+\author{Oleg Bulichev}
+%% These additional packages are used within the document:
+\usepackage{ragged2e}  % `\justifying` text
+\usepackage{booktabs}  % Tables
+\usepackage{tabularx}
+\usepackage{tikz}      % Diagrams
+\usetikzlibrary{decorations.pathreplacing,calligraphy,calc,graphs, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage{url}       % `\url`s
+\usepackage{listings}  % Code listings
+\usepackage{floatrow}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{animate}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multimedia}
+\usepackage{makecell}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{rotating}
+\usepackage{amsmath}
+
+\usepackage[font={}, labelfont=it,textfont={it},justification=centering, skip=0pt]{caption}
+% will apply to all subcaptions
+\usepackage[font={},skip=2pt]{subcaption}
+
+
+\graphicspath{{resources/}}
+\frenchspacing
+
+
+
+
+% \setbeamertemplate{caption}[numbered]
+\captionsetup[figure]{labelformat=empty}
+
+
+\newcommand{\fbckg}[1]{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{#1}}}%frame background
+
+\usepackage[framemethod=TikZ]{mdframed}
+\newcommand{\dbox}[1]{
+\begin{mdframed}[roundcorner=3pt, backgroundcolor=yellow, linewidth=0]
+\vspace{1mm}
+{#1}
+\vspace{1mm}
+\end{mdframed}
+}
+\addtobeamertemplate{frametitle}{}{\vspace{-0.35cm}}
+
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[a4paper,border shrink=2mm,landscape]
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{tabularray}
+
+\begin{document}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\fbckg{fibeamer/figs/title_page.png}
+\frame[c]{\setcounter{framenumber}{0}
+    \usebeamerfont{title}%
+    \usebeamercolor[fg]{title}%
+    \begin{minipage}[b][6.3\baselineskip][b]{\textwidth}%
+        \textcolor{black}{\raggedright\inserttitle}
+    \end{minipage}
+    % \vskip-1.5\baselineskip
+
+    \usebeamerfont{subtitle}%
+    \usebeamercolor[fg]{framesubtitle}%
+    \begin{minipage}[b][3\baselineskip][b]{\textwidth}
+        \raggedright%
+        \insertsubtitle%
+    \end{minipage}
+    \vskip.25\baselineskip
+}
+
+\note{}
+
+\fbckg{fibeamer/figs/common.png}
+
+\begin{frame}[t]{Quiz 1}
+    \begin{minipage}{0.6\textwidth}
+        \begin{enumerate}
+            \item Write down a velocity equation, using natural form. Show up the dimensions of each element of the formulae. Explain what each element means and their properties, if exists.
+            \item Find a transformation matrix from $X0Y$ to $X'0'Y'$ (length of vectors is important).
+        \end{enumerate}
+    \end{minipage}
+    \begin{minipage}{0.35\textwidth}
+        \vspace{-0.5cm}
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % Include the image in a node
+                \node [above right, inner sep=0] (image) at (0,0)
+                {\centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{white.png}};
+                % Create scope with normalized axes
+                \begin{scope}[
+                        x={($ 0.1*(image.south east)$)},
+                        y={($ 0.1*(image.north west)$)}]
+                    % Grid and axes' labels
+                    \draw[lightgray,step=1] (image.south west) grid (image.north east);
+                    \foreach \x in {0,1,...,10} { \node [below] at (\x,0) {\x}; }
+                    \foreach \y in {0,1,...,10} { \node [left] at (0,\y) {\y};}
+
+                    % Labels
+                    \draw[latex-, very thick,black] (6,1) -- (6,3)
+                    node[above right,black]{$0$};
+                    \node[below, black] at (6,1) {$X$};
+
+                    \draw[latex-, very thick,black] (4,3) -- (6,3);
+                    \node[below, black] at (4,3) {$Y$};
+
+                    \draw[latex-, very thick,black] (5,7) -- (3,9)
+                    node[above right,black]{$0'$};
+                    \node[below, black] at (5,7) {$X'$};
+
+                    \draw[latex-, very thick,black] (1,7) -- (3,9);
+                    \node[below, black] at (1,7) {$Y'$};
+
+                    \node[circle,fill=black,scale=0.5] at (6,3){};
+                    \node[circle,fill=black,scale=0.5] at (3,9){};
+                \end{scope}
+            \end{tikzpicture}
+            \caption*{Quiz 1, Task 2}
+            \label{fig:file_name}
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}[c]{Answer}
+\framesubtitle{Task 2}
+    \vspace*{-0.2cm}
+    \begin{minipage}{0.6\textwidth}
+        $T = \left[\begin{matrix}1 & 0 & -3\\0 & 1 & 1.5\\0 & 0 & 1\end{matrix}\right]$\\
+        $R_z = \left[\begin{matrix}\cos{\left(45 \right)} & \sin{\left(45 \right)} & 0\\- \sin{\left(45 \right)} & \cos{\left(45 \right)} & 0\\0 & 0 & 1\end{matrix}\right] =\left[\begin{matrix}\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 0\\- \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 0\\0 & 0 & 1\end{matrix}\right]$ \\
+        $Sc = \left[\begin{matrix}\sqrt{2} & 0 & 0\\0 & \sqrt{2} & 0\\0 & 0 & 1\end{matrix}\right]$ \\
+        $H = T R_z Sc = \left[\begin{matrix}1 & 1 & -3\\-1 & 1 & 1.5\\0 & 0 & 1\end{matrix}\right]$
+        Check --- $H \begin{bmatrix} 1\\ 0\\ 1 \end{bmatrix} = \begin{bmatrix} -2\\ 0.5\\ 1 \end{bmatrix}$
+    \end{minipage}
+    \begin{minipage}{0.35\textwidth}
+        \vspace{-0.5cm}
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % Include the image in a node
+                \node [above right, inner sep=0] (image) at (0,0)
+                {\centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{white.png}};
+                % Create scope with normalized axes
+                \begin{scope}[
+                        x={($ 0.1*(image.south east)$)},
+                        y={($ 0.1*(image.north west)$)}]
+                    % Grid and axes' labels
+                    \draw[lightgray,step=1] (image.south west) grid (image.north east);
+                    \foreach \x in {0,1,...,10} { \node [below] at (\x,0) {\x}; }
+                    \foreach \y in {0,1,...,10} { \node [left] at (0,\y) {\y};}
+
+                    % Labels
+                    \draw[latex-, very thick,black] (6,1) -- (6,3)
+                    node[above right,black]{$0$};
+                    \node[below, black] at (6,1) {$X$};
+
+                    \draw[latex-, very thick,black] (4,3) -- (6,3);
+                    \node[below, black] at (4,3) {$Y$};
+
+                    \draw[latex-, very thick,black] (5,7) -- (3,9)
+                    node[above right,black]{$0'$};
+                    \node[below, black] at (5,7) {$X'$};
+
+                    \draw[latex-, very thick,black] (1,7) -- (3,9);
+                    \node[below, black] at (1,7) {$Y'$};
+
+                    \node[circle,fill=black,scale=0.5] at (6,3){};
+                    \node[circle,fill=black,scale=0.5] at (3,9){};
+                \end{scope}
+            \end{tikzpicture}
+            \caption*{Quiz 1, Task 2}
+            \label{fig:file_name}
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
+\end{document}
+
