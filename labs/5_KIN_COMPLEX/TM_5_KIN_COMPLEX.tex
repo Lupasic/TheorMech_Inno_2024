@@ -1,0 +1,142 @@
+% \documentclass[aspectratio=169,notes]{beamer}
+\documentclass[aspectratio=169]{beamer}
+\usetheme[faculty=phil]{fibeamer}
+\usepackage{polyglossia}
+\setmainlanguage{english} %% main locale instead of `english`, you
+%% can typeset the presentation in either Czech or Slovak,
+%% respectively.
+\setotherlanguages{russian} %% The additional keys allow
+%%
+%%   \begin{otherlanguage}{czech}   ... \end{otherlanguage}
+%%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
+%%
+%% These macros specify information about the presentation
+\title[Theoretical Mechanics]{Theoretical Mechanics, Lab 5: KIN COMPLEX} %% that will be typeset on the
+\subtitle{Complex motion
+\\ \ \\ \ 
+         } %% title page.
+\author{Oleg Bulichev}
+%% These additional packages are used within the document:
+\usepackage{ragged2e}  % `\justifying` text
+\usepackage{booktabs}  % Tables
+\usepackage{tabularx}
+\usepackage{tikz}      % Diagrams
+\usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage{url}       % `\url`s
+\usepackage{listings}  % Code listings
+% \usepackage{subfigure}
+\usepackage{floatrow}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{todonotes}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{animate}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage{graphicx}
+\usepackage{colortbl}
+
+\graphicspath{{resources/}}
+\frenchspacing
+
+\setbeamertemplate{caption}[numbered]
+\usetikzlibrary{graphs}
+
+% \usepackage[backend=biber,style=ieee,autocite=footnote]{biblatex}
+% \addbibresource{biblio.bib}
+% \DefineBibliographyStrings{english}{%
+%   bibliography = {References},}
+
+\newcommand{\oleg}[2][] {\todo[color=red, #1] {OLEG:\\ #2}}
+\newcommand{\fbckg}[1]{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{#1}}}%frame background
+
+\usepackage[framemethod=TikZ]{mdframed}
+\newcommand{\dbox}[1]{
+\begin{mdframed}[roundcorner=3pt, backgroundcolor=yellow, linewidth=0]
+\vspace{1mm}
+{#1}
+\vspace{1mm}
+\end{mdframed}
+}
+
+\begin{document}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\fbckg{fibeamer/figs/title_page.png}
+\frame[c]{\setcounter{framenumber}{0}
+    \usebeamerfont{title}%
+    \usebeamercolor[fg]{title}%
+    \begin{minipage}[b][6.5\baselineskip][b]{\textwidth}%
+        \textcolor{black}{\raggedright\inserttitle}
+    \end{minipage}
+    % \vskip-1.5\baselineskip
+
+    \usebeamerfont{subtitle}%
+    \usebeamercolor[fg]{framesubtitle}%
+    \begin{minipage}[b][3\baselineskip][b]{\textwidth}
+        \raggedright%
+        \insertsubtitle%
+    \end{minipage}
+    \vskip.25\baselineskip
+}
+%   \frame[c]{\maketitle}
+
+\fbckg{fibeamer/figs/common.png}
+
+\section*{Task 1}
+
+\begin{frame}[t]{Task 1 (mine)}
+\begin{minipage}{0.55\textwidth}
+The plate $ABC$ rotates around $OZ$ axis with constant angular velocity $\omega_e=-10$. The point $M$ moves along $AC$ side. The motion law is the following $s=s(t)=AM(t)=4t^3$.\\
+
+The goal is to determine the velocity and acceleration of $M$, when $t=0.5$.
+\end{minipage}
+\begin{minipage}{0.43\textwidth}
+        \begin{figure}[H]
+    \includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{lab5_task1_fig.png}\\
+    \end{figure}
+\end{minipage}
+\end{frame}
+
+\section*{Expand your horizon}
+
+\begin{frame}[t]{Celtic stone}
+    \framesubtitle{}
+        \vspace{-0.6cm}
+        \begin{figure}[H]
+            \href{https://youtu.be/nsSkmgmFWRU}{\centering\includegraphics[width=0.6\textwidth,keepaspectratio]{image9.jpg}}
+            \label{fig:image9}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}[t]{Chinese spinning top}
+        \framesubtitle{}
+            \vspace{-0.6cm}
+            \begin{figure}[H]
+                \href{https://youtu.be/V7hGcLU_wlY}{\centering\includegraphics[width=0.6\textwidth,keepaspectratio]{image8.jpg}}
+                \label{fig:image8}
+            \end{figure}
+        \end{frame}
+
+\section*{Task 2}
+
+\begin{frame}[t]{Task 2 (yours)}
+\framesubtitle{}
+    A cart has an acceleration $a_0=49.3$. Electrical motor on a top has the motion rule $\phi=\phi(t)=t^2$. $CA=R=20$.
+    Find $\vec{a}_a$ for precise position ($t=1$).  
+    \begin{figure}[H]
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{image11.png}
+            \label{fig:image11}
+    \end{figure}
+\end{frame}
+
+\fbckg{fibeamer/figs/last_page.png}
+\frame[plain]{}
+\end{document}

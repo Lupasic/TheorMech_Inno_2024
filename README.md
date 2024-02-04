@@ -31,12 +31,29 @@ This repository contains regularly updated course materials. You can use lab sli
 * [Task 2](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/4_KIN_PLANE3_SPHER/solution/TM_4_KIN_PLANE3_SPHER_task_2_sol.pdf)
 * [Task 3](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/4_KIN_PLANE3_SPHER/solution/TM_4_KIN_PLANE3_SPHER_task_3_sol.pdf)
 
+## Lab 5
+[Lab 5 (Complex motion)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/5_KIN_COMPLEX/TM_5_KIN_COMPLEX.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/5_KIN_COMPLEX/solution/TM_5_KIN_COMPLEX_task_1_sol.pdf)
+
+## Lab 6
+[Lab 6 (Statics: single body)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/6_STATICS1/TM_6_STATICS1.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/6_STATICS1/solution/TM_6_STATICS1_task_1_sol.pdf)
+
+## Lab 7
+[Lab 7 (Statics: multiple bodies)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/7_STATICS2/TM_7_STATICS2.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/7_STATICS2/solution/TM_7_STATICS2_task_1_sol.pdf)
+
 # Week HWs
 * [HW 1 (Particle kinematics; Rotational motion; Plane motion, simple)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_1_KIN_PART_ROT_PLANE1/HW_1_KIN_PART_ROT_PLANE1.pdf)
 * [HW 2 (Plane motion, complex)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_2_KIN_PLANE2/HW_2_KIN_PLANE2.pdf)
+* [HW 3 (Complex motion)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_3_KIN_COMPLEX/HW_3_KIN_COMPLEX.pdf)
+* [HW 4 (Statics: multiple bodies, 3D)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_4_STATICS/HW_4_STATICS.pdf)
 
 # Big HWs
-*
+* [Big HW 1 (Particle kinematics)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/BigHW_1/TM_BigHW_1.pdf)
 
 # For contributors
 
