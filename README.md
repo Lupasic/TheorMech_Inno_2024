@@ -46,11 +46,19 @@ This repository contains regularly updated course materials. You can use lab sli
 ### Tasks solution
 * [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/7_STATICS2/solution/TM_7_STATICS2_task_1_sol.pdf)
 
+## Lab 7
+[Lab 8 (Intro to Dynamics; Particle dynamics for inertial systems; Particle dynamics for non inertial systems)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/TM_8_DYN_PART_INERT_NONINERT.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/TM_8_DYN_PART_INERT_NONINERT_task_1_sol.pdf)
+* [Task 1 code](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/8_DYN_PART_INERT_NONINERT_task_1_sol.ipynb)
+* [Task 2](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/TM_8_DYN_PART_INERT_NONINERT_task_2_sol.pdf)
+
 # Week HWs
 * [HW 1 (Particle kinematics; Rotational motion; Plane motion, simple)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_1_KIN_PART_ROT_PLANE1/HW_1_KIN_PART_ROT_PLANE1.pdf)
 * [HW 2 (Plane motion, complex)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_2_KIN_PLANE2/HW_2_KIN_PLANE2.pdf)
 * [HW 3 (Complex motion)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_3_KIN_COMPLEX/HW_3_KIN_COMPLEX.pdf)
 * [HW 4 (Statics: multiple bodies, 3D)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_4_STATICS/HW_4_STATICS.pdf)
+* [HW 5 (Particle dynamics for inertial systems; Particle dynamics for non inertial systems)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_5_PART_INERT_NONINERT/HW_5_PART_INERT_NONINERT.pdf)
 
 # Big HWs
 * [Big HW 1 (Particle kinematics)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/BigHW_1/TM_BigHW_1.pdf)
