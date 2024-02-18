@@ -11,9 +11,10 @@
 %%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
 %%
 %% These macros specify information about the presentation
-\title[Theoretical Mechanics]{Week HW 3, COMPLEX} %% that will be typeset on the
-\subtitle{ Complex motion \\
-\ \\ \
+\title[Theoretical Mechanics]{Week HW 5, PART [Non]INERT} %% that will be typeset on the
+\subtitle{Particle dynamics for inertial systems\\
+Particle dynamics for noninertial systems\\
+\ 
          } %% title page.
 \author{Oleg Bulichev}
 %% These additional packages are used within the document:
@@ -90,42 +91,63 @@
 
 \fbckg{fibeamer/figs/common.png}
 
-\begin{frame}[t]{Task 1}
-    \begin{minipage}{0.6\textwidth}
-      You should find an absolute velocity and coriolis acceleration, and absolute acceleration of particle $M$ at the time $t=t_1$. 
+
+\begin{frame}[t]{Task 1 (Coding)}
+  \vspace*{-0.4cm}
+  \scriptsize
+\textbf{  The legend shall speak} that this situation was in WW2. There are two actors in this story: a sniper and an officer. Both knew about each other's existence. There was a river between them. The officer was always sitting in a trench, but the sniper knew his location and already calculated the distance to the target ($L\ meters$).
+
+  After a while cargo ship appeared, which blocked the direct vision of the trench. The officer decided to stand up to stretch his legs. The sniper assumed that it might happened and make a shot, hitting the officer. Let's check this story.
+
+\textbf{Formal description:} Considering the bullet as a material point and taking into account its weight and the force of wind resistance, we need to solve the following problems:
+  \begin{itemize}
+    \item Find the $\alpha$ (initial angle of overhang) that is required to hit the target. Output the value in degrees.
+    \item At this angle, what is the maximum height the bullet will reach? Output the value.
+    \item Plot $y(x)$, $F_c(t)$.
+  \end{itemize}
+
+  \vspace*{-0.3cm}
+    \begin{minipage}{0.7\textwidth}    
+      The problem should be solved in 2 ways. When air resistance is not taken into account, and when $F_c(v^2)=-kv \vec{v}$. The second problem can only be solved by numerical integration.
       
-      Needed variables:\\
-      $OM=s_r(t)=f_3(t)=2t^3+3t$;\\
-      $\phi(t)=f_2(t)=\frac{1}{24}\pi t^2$;\\
-      $t_1=2,\ R=15$.
+      All specifications about Mosin rifle such as bullet weight $m$, bullet velocity at departure $v_0$, effective firing distance are taken from the official documentation.
+      
+      $m=13.6\ g, L=1500\ m, k=1.3 \cdot 10^{-5}, v_0=870\ m/s$.
     \end{minipage}
-    \begin{minipage}{0.39\textwidth}
-      \vspace*{-0.5cm}
+    \begin{minipage}{0.29\textwidth}
+      \vspace*{-0.6cm}
       \begin{figure}[H]
-        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW3_1}
-        \caption*{Task 1 \\ (Yablonskii (eng) K-5)}
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW5_1}
+        \caption*{Task 1}
       \end{figure}
     \end{minipage}
   \end{frame}
   
   \begin{frame}[t]{Task 2 (Coding)}
-    \begin{minipage}{0.65\textwidth}
-      You should find:
+    \vspace*{-0.5cm}
+    \begin{minipage}{0.6\textwidth}
+      \scriptsize
+      A particle $M$ (mass $m$) is moving inside of the cylindrical channel of the moving object $D$. The object $D$ has a radius $r$. No friction between $M$ and $D$.
+  
+      Determine the equation of the relative motion of this particle $x=f(t)$. Also you need to find the pressure force the particle acting on the channel wall.
+      
+      At the end, you should provide:
       \begin{enumerate}
           \item simulate this mechanism (obtain all positions);
-          \item Find absolute, transport and relative velocities and accelerations for $M$;
-          \item Find $t$, when $M$ leave a channel;
-          \item draw plots $v_{rel},\ v_{tr},\ a_{tr},\ a_{rel},\ a$ respect to time.
+          \item show all acceleration components, inertial forces, gravity force and $N$;
+          \item plot of the particle $x(t)$, till the time, while point won't leave the channel;
+          \item plot $N(t)$ , till the time, while point won't leave the channel.
       \end{enumerate}
+      
       Needed variables:\\
-      $\phi_e=f_1(t)=0.2t^3+t$;\\
-      $OM=s_r=f_2(t)=5\sqrt{2}(t^2+t)$;\\
-      $a=60,\ \alpha = 45$.
+      $m=0.02,\ \omega=\pi,\ a = 60,\ \alpha=45^\circ$;\\
+      Initial conditions: $t_0=0,\ x_0=0,\ \dot{x}_0=0.4$.
     \end{minipage}
-    \begin{minipage}{0.34\textwidth}
+    \begin{minipage}{0.39\textwidth}
+      \vspace*{-0.3cm}
       \begin{figure}[H]
-        \centering\includegraphics[height=5cm,width=0.99\textwidth,keepaspectratio]{HW3_2}
-        \caption*{Task 2 \\ (Yablonskii (eng) K-6)}
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW3_2}
+        \caption*{ Task 2\\ (Yablonskii (eng) D4)}
       \end{figure}
     \end{minipage}
   \end{frame}
