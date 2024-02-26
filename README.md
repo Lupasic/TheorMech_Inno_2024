@@ -46,12 +46,23 @@ This repository contains regularly updated course materials. You can use lab sli
 ### Tasks solution
 * [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/7_STATICS2/solution/TM_7_STATICS2_task_1_sol.pdf)
 
-## Lab 7
+## Lab 8
 [Lab 8 (Intro to Dynamics; Particle dynamics for inertial systems; Particle dynamics for non inertial systems)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/TM_8_DYN_PART_INERT_NONINERT.pdf)
 ### Tasks solution
 * [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/TM_8_DYN_PART_INERT_NONINERT_task_1_sol.pdf)
 * [Task 1 code](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/8_DYN_PART_INERT_NONINERT_task_1_sol.ipynb)
 * [Task 2](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/8_DYN_PART_INERT_NONINERT/solution/TM_8_DYN_PART_INERT_NONINERT_task_2_sol.pdf)
+
+## Lab 9
+[Lab 9 (Motion of the centre of Mass of a system; Change of Linear momentum of a system)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/9_DYN_COM_LINEAR/TM_9_DYN_COM_LINEAR.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/9_DYN_COM_LINEAR/solution/TM9_DYN_COM_LINEAR_task_1_2_sol.pdf)
+
+
+## Lab 10
+[Lab 10 (Change of Principal Angular momentum of a system)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/10_DYN_ANGULAR/TM_10_DYN_ANGULAR.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/10_DYN_ANGULAR/solution/TM_10_DYN_ANGULAR_task_1_sol.pdf)
 
 # Week HWs
 * [HW 1 (Particle kinematics; Rotational motion; Plane motion, simple)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_1_KIN_PART_ROT_PLANE1/HW_1_KIN_PART_ROT_PLANE1.pdf)
@@ -59,6 +70,7 @@ This repository contains regularly updated course materials. You can use lab sli
 * [HW 3 (Complex motion)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_3_KIN_COMPLEX/HW_3_KIN_COMPLEX.pdf)
 * [HW 4 (Statics: multiple bodies, 3D)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_4_STATICS/HW_4_STATICS.pdf)
 * [HW 5 (Particle dynamics for inertial systems; Particle dynamics for non inertial systems)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_5_PART_INERT_NONINERT/HW_5_PART_INERT_NONINERT.pdf)
+* [HW 6 (Motion of the centre of mass of a system; Change of Principal Angular momentum of a system)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_6_COM_LINEAR_ANGULAR/HW_6_COM_LINEAR_ANGULAR.pdf)
 
 # Big HWs
 * [Big HW 1 (Particle kinematics)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/BigHW_1/TM_BigHW_1.pdf)
