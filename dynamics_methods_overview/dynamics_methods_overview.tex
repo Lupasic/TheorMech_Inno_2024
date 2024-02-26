@@ -8,7 +8,6 @@
 \usepackage{fullpage} % Package to use full page
 \usepackage{parskip} % Package to tweak paragraph skipping
 \usepackage{tikz} % Package for drawing
-\usepackage{amsmath}
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{graphicx} % for pdf, bitmapped graphics files
@@ -78,23 +77,26 @@ Particle & 1--3 & $m\vec{a}_r=\sum\vec{F}+\vec{\Phi}_{cor}+\vec{\Phi}_{trans}$, 
 Theorem on: \begin{enumerate}
     \item Motion of the centre of mass of a system
     \item Change of linear momentum of a system
-\end{enumerate}  & System & 1--3 & \begin{enumerate}
-    \item $
-    m\vec{a}_c=\sum\vec{F}; \
-    \vec{x}_c=\dfrac{\sum m_i\vec{x}_i}{\sum m_i}$
-    \item $
-    \dfrac{\mathrm{d} \vec{Q}_c}{\mathrm{d} t}=\sum\vec{F}; \
-    Q_c =\sum m\vec{v}_i$
+\end{enumerate}  & 
+%<*sndcomlinear> 
+System & 1--3 & 
+\begin{enumerate}
+    \item $m\vec{a}_c=\sum\vec{F}; \ \vec{x}_c=\dfrac{\sum m_i\vec{x}_i}{\sum m_i}$
+    \item $\dfrac{\mathrm{d} \vec{Q}_c}{\mathrm{d} t}=\sum\vec{F}; \ Q_c =\sum m\vec{v}_i$
 \end{enumerate}
  & We are interested in linear motion. \begin{enumerate}
     \item Easy to find a displacement for a body of a system, motion equation for system, external forces.
     \item Easy to find a velocities for bodies.
 \end{enumerate}  & \\
+%</sndcomlinear> 
 \rowcolor{LightGray}
-Theorem on change of angular momentum of a system & System & 1 & \begin{eqnarray*}
-    \frac{\mathrm{d} \vec{L}_c}{\mathrm{d} t}=\sum\vec{M}_c \\ \text{ $c$-- point of calculation}\\
+Theorem on change of angular momentum of a system &
+%<*sndangular> 
+ System & 1 & \begin{eqnarray*}
+    \frac{\mathrm{d} \vec{L}_c}{\mathrm{d} t}=\sum\vec{M}_c \\ \text{ $c$ -- point of calculation}\\
    \vec{L}_c =\sum \vec{L}_i,\ \vec{L}_i = J\vec{\omega} = \vec{Q}\times R
 \end{eqnarray*} & We are interested in angular motion. Easy to find a angular velocities for bodies. & The choice of a point depends of the motion. If rotation -- more convenient to put it in the center of rotation, if planar -- in the center of mass.\\
+%</sndangular>
 d'Alembert principle (kinetostatics) & Body, system & 1--6 & \begin{eqnarray*}\left\{\begin{matrix}
 \sum \vec{F} + \vec{\Phi} = 0\\
 \sum \vec{M} + \vec{M}_{\Phi} = 0
