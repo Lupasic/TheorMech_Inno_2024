@@ -1,0 +1,168 @@
+% \documentclass[aspectratio=169,notes]{beamer}
+\documentclass[aspectratio=169]{beamer}
+\usetheme[faculty=phil]{fibeamer}
+\usepackage{polyglossia}
+\setmainlanguage{english} %% main locale instead of `english`, you
+%% can typeset the presentation in either Czech or Slovak,
+%% respectively.
+\setotherlanguages{russian} %% The additional keys allow
+%%
+%%   \begin{otherlanguage}{czech}   ... \end{otherlanguage}
+%%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
+%%
+%% These macros specify information about the presentation
+\title[Theoretical Mechanics]{Week HW 8, EULER LAGRANGE} %% that will be typeset on the
+\subtitle{Euler-Lagrange equation\\
+\ \\
+\ 
+         } %% title page.
+\author{Oleg Bulichev}
+%% These additional packages are used within the document:
+\usepackage{ragged2e}  % `\justifying` text
+\usepackage{booktabs}  % Tables
+\usepackage{tabularx}
+\usepackage{tikz}      % Diagrams
+\usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage{url}       % `\url`s
+\usepackage{listings}  % Code listings
+% \usepackage{subfigure}
+\usepackage{floatrow}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{todonotes}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{animate}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage{graphicx}
+\usepackage{colortbl}
+
+\graphicspath{{resources/}}
+\frenchspacing
+
+\setbeamertemplate{caption}[numbered]
+\usetikzlibrary{graphs}
+
+% \usepackage[backend=biber,style=ieee,autocite=footnote]{biblatex}
+% \addbibresource{biblio.bib}
+% \DefineBibliographyStrings{english}{%
+%   bibliography = {References},}
+
+\newcommand{\oleg}[2][] {\todo[color=red, #1] {OLEG:\\ #2}}
+\newcommand{\fbckg}[1]{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{#1}}}%frame background
+
+\usepackage[framemethod=TikZ]{mdframed}
+\newcommand{\dbox}[1]{
+\begin{mdframed}[roundcorner=3pt, backgroundcolor=yellow, linewidth=0]
+\vspace{1mm}
+{#1}
+\vspace{1mm}
+\end{mdframed}
+}
+
+\begin{document}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\fbckg{fibeamer/figs/title_page.png}
+\frame[c]{\setcounter{framenumber}{0}
+    \usebeamerfont{title}%
+    \usebeamercolor[fg]{title}%
+    \begin{minipage}[b][6.5\baselineskip][b]{\textwidth}%
+        \textcolor{black}{\raggedright\inserttitle}
+    \end{minipage}
+    % \vskip-1.5\baselineskip
+
+    \usebeamerfont{subtitle}%
+    \usebeamercolor[fg]{framesubtitle}%
+    \begin{minipage}[b][3\baselineskip][b]{\textwidth}
+        \raggedright%
+        \insertsubtitle%
+    \end{minipage}
+    \vskip.25\baselineskip
+}
+%   \frame[c]{\maketitle}
+
+\fbckg{fibeamer/figs/common.png}
+
+\begin{frame}[t]{Task 1 (Coding)}
+\scriptsize
+  \begin{minipage}{0.5\textwidth}
+    A mechanical system under the gravity force moves from the rest. Define the velocity of object $A$ if it travels distance $s$ from the rest. The masses of the non-deformable ropes are ignored. Neglect the masses of links $FK,\ KC$ and the piston $K$.
+
+    The task is to:
+    \begin{enumerate}
+        \item make a plot $v_A(s)$;
+        \item What will change if we omit the last sentence (Neglect ...). (Explain it and show on equations). Why Yablonskii made these constraints?
+    \end{enumerate}
+    
+    Needed variables:\\
+    $m_A=1,\ m_B=3,\ m_D=20$ (kg);\\
+    $R_B=20,\ R_D=20,\ i_{Bx}= 18$ (cm), $i_{Bx}$ -- radii of gyration of the body;\\
+    $\psi = 0.6$ (cm), where $\psi$ is rolling friction.
+  \end{minipage}
+  \begin{minipage}{0.49\textwidth}
+    \begin{figure}[H]
+      \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW8_1}
+      \caption*{Task 1 \\ (Yablonskii (eng) D6)}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}[t]{Task 2 (Coding)}
+  \framesubtitle{System description}
+  \vspace{-0.6cm}
+    \begin{columns}[T,onlytextwidth]
+      \begin{column}{0.64\textwidth}
+        \footnotesize
+        You have a a cart pole. Body $1$ is a slider, mass $m_1$, it moves without friction.
+
+        $AB$ is a massless rod with length $l$. Body $2$ with mass $m_2$ is connected to $AB$ in point $B$.
+        \medskip
+
+        It's a 2 DoF system. You should take $x$ and $\phi$ as a representation of this system. The origin of each coordinate should be the same as on the picture.
+        \medskip
+
+        Initial conditions:
+        \begin{enumerate}
+          \item $x = 0,\ \phi = 10^\circ,\ \dot{x} = 0,\ \dot{\phi} = 0,\ t=0$;
+          \item $x = 0.5,\ \phi = 45^\circ,\ \dot{x} = 0,\ \dot{\phi} = 0,\ t=0$;
+          \item $x = 0.5,\ \phi = -135^\circ,\ \dot{x} = 0,\ \dot{\phi} = 0,\ t=0$;
+        \end{enumerate}
+        Parameters: $m_1 = 5\ kg,\ m_2 = 1\ kg,\ l = 1\ m$.
+
+      \end{column}
+      \begin{column}{0.34\textwidth}
+        \begin{figure}[H]
+          \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW7_2.png}
+          \caption*{Task 2}
+          \label{fig:HW7_2.png}
+        \end{figure}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}[t]{Task 2 (Coding)}
+    \framesubtitle{Tasks description}
+          \footnotesize
+          \vspace{-0.4cm}
+          You should solve this problem using \textbf{Euler-Lagrange} method;
+
+          \textbf{Tasks}
+          \begin{enumerate}
+            \item To derive a differential equation of the motion, using \textbf{Euler-Lagrange} approach.
+            \item To create plots $x(t),\ \phi(t), \dot{x}(t), \dot{\phi}(t)$. 
+            \item To make a simulation of this system. Show velocities and accelerations for $1,\ 2$ bodies (coding approach).
+            \item Compare the obtained results from previous lab (\textit{Newton-Euler} and \textit{Model-oriented design}).
+          \end{enumerate}
+    \end{frame}
+
+\fbckg{fibeamer/figs/last_page.png}
+\frame[plain]{}
+\end{document}
