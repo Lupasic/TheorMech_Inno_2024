@@ -106,47 +106,53 @@ d'Alembert principle (kinetostatics) & Body, system & 1--6 & \begin{eqnarray*}\l
     \item In contrast of the Coriolis or Transport forces of inertia, the d'Alambert force of inertia has not a special physical meaning. It's a math trick.
 \end{itemize} \\
 \rowcolor{LightGray}
-Theorem on the change of kinetic energy of a system & Body, System & 1 & \begin{eqnarray*}
+Theorem on the change of kinetic energy of a system &
+%<*sndkinen> 
+Body, System & 1 & \begin{eqnarray*}
     \mathrm{d}T = \delta A\text{, or } T_2 - T_1 = A_{12} \\
     T_{lin} = \frac{mv^2}{2};\ T_{rot}=\frac{J\omega^2}{2}\\
     A_{12}=\int_{1}^{2}\delta A;\ A_{12}= \sum A_i\\ 
-    \delta A=\vec{F} \cdot \delta\vec{r}= \vec{F}\delta\vec{r}cos(\vec{F} \hat{\ } \delta\vec{r})=\vec{M}\delta\vec{\phi}\\
+    \delta A=\vec{F} \cdot \delta\vec{r}= \vec{F}\delta\vec{r}cos(\vec{F} \hat{\ } \delta\vec{r})=|M|\delta\vec{\phi}\\
     \delta A = \Pi_1 - \Pi_2 = F\Delta h \text{ potential force}
 \end{eqnarray*} & To find a correlation between displacement and velocity. Helpful if you need to find \textit{one} force.  & \begin{itemize}
     \item Work of internal forces may be \textbf{not equal to zero!} 
     \item $\delta\vec{r}$ can be changed on $\mathrm{d}\vec{r}$ because it is usually independent of time (scleronomic). This is done in order to be able to integrate by coordinates rather than by time.
 \end{itemize}
-\\
+ \\
+%</sndkinen>
 Principle of virtual:
 \begin{enumerate}
     \item Displacements (work)
     \item Velocities
 \end{enumerate}
- & System & 1 &
+ &
+%<*sndpvd>  
+ System & 1 &
  \begin{enumerate}
      \item $
-\sum \delta A = 0, 
-\text{ where $A$ is a virtual work}
-$
-\item$
-\sum W = 0; \
-W = \vec{F} \cdot \vec{v} = \vec{F}\vec{v} cos(\vec{F} \hat{\ } \vec{v}), $ \text{where $W$ is power, $v$ -- virtual velocity}
+\sum \delta A = 0,$ where $A$ is a virtual work
+\item 
+$\sum W = 0;\ W = \vec{F} \cdot \vec{v} = \vec{F}\vec{v} cos(\vec{F}\vec{v})$, where $W$ is power, $v$ -- virtual velocity
  \end{enumerate}
-
 & To find \textit{one} force or reaction force. & \begin{itemize}
     \item Virtual work has infinitesimal displacements.
     \item System must be in static each time.
 \end{itemize}\\
-
+%</sndpvd> 
 \rowcolor{LightGray}
-Lagrange-d'Alambert principle (General Equation of Dynamics)& System & 1 in cartesian, \par $n$ in generalized coordinates & \begin{itemize}
+Lagrange-d'Alambert principle (General Equation of Dynamics)&
+%<*sndgeneqndyn> 
+ System & 1 in cartesian, \par $n$ in generalized coordinates & \begin{itemize}
     \item $
 \sum \delta A + \sum \delta A^{\Phi} = 0$, \par
  where $A$ is a virtual work
     \item
 $\sum W + \sum W^{\Phi} = 0$, \par where $W$ is a power
-\end{itemize}  & To find accelerations, motion equations &  \\
-Newton-Euler equations & System & $6k + \sum_{0}^{k} (6-m_i)$, $k$ -- amount of bodies, $m_i$ -- particular joint d.o.f &
+\end{itemize}  & To find accelerations, motion equations & \  \\
+%</sndgeneqndyn> 
+Newton-Euler equations &
+%<*sndnewtoneuler> 
+ System & $6k + \sum_{0}^{k} (6-m_i)$, $k$ -- amount of bodies, $m_i$ -- particular joint d.o.f &
 \begin{eqnarray*}\left\{\begin{matrix}
 f_i = F_i + f_{i+1} \\
 m_i = M_i + m_{i+1} + \vec{p}_{c_i} \times F_i + \vec{p}_{i+1} \times f_{i+1} \\
@@ -157,8 +163,11 @@ F_i = m \vec{\dot{v}}_{C_i}\\
 M_i = I_{C_i}\dot{\omega}_i + \omega_i \times I_{C_i}\omega_i
 \end{eqnarray*}
 & To find accelerations, forces, motion equations. & We divide a system into separate bodies, write equations for rotations and translations, plus constraints. At the end we have a dozens of equations, which should be solved numerically.\\
+%</sndnewtoneuler> 
 \rowcolor{LightGray}
-Euler-Lagrange equations & Body, System & \makecell{$s$,\\ $s$ -- d.o.f of system} &
+Euler-Lagrange equations &
+%<*sndeulerlagrange> 
+ Body, System & $s$, $s$ -- d.o.f of system &
 \begin{eqnarray*}
 \frac{\mathrm{d}}{\mathrm{d} t}\left(\frac{\partial T}{\partial \dot{q}_i}\right) - \frac{\partial T}{\partial q_i} = Q_i \text{ or},\\
 \frac{\mathrm{d}}{\mathrm{d} t}\left(\frac{\partial L}{\partial \dot{q}_i}\right)  - \frac{\partial L}{\partial q_i}= Q^D_i\\
@@ -170,6 +179,7 @@ L = T - \Pi
     \item $Q$ -- all generalized forces.
     \item $Q^D$ -- non-potential general forces.
 \end{itemize}\\
+%</sndeulerlagrange> 
 
 \end{longtable}
 

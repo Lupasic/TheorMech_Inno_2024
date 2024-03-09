@@ -64,6 +64,31 @@ This repository contains regularly updated course materials. You can use lab sli
 ### Tasks solution
 * [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/10_DYN_ANGULAR/solution/TM_10_DYN_ANGULAR_task_1_sol.pdf)
 
+## Lab 11
+[Lab 11 (Change of Kinetic Energy of a System)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/11_DYN_KIN_ENERGY/TM_11_DYN_KIN_ENERGY.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/11_DYN_KIN_ENERGY/solution/TM_11_DYN_KIN_ENERGY_task_1_sol.pdf)
+* [Task 4](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/11_DYN_KIN_ENERGY/solution/TM_11_DYN_KIN_ENERGY_task_4_sol.pdf)
+
+## Lab 12
+[Lab 12 (Approaches to dynamic modeling; Model-oriented design; Newton-Euler method)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/12_DYN_NEWTON_EULER/TM_12_DYN_NEWTON_EULER.pdf)
+### Tasks solution
+* [Task 1, code](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/12_DYN_NEWTON_EULER/solution/TM_12_DYN_NEWTON_EULER_task_1_sol.ipynb)
+
+## Lab 13
+[Lab 13 (Euler-Lagrange equation)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/13_DYN_EULER_LAGRANGE/TM_13_DYN_EULER_LAGRANGE.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/13_DYN_EULER_LAGRANGE/solution/TM_13_DYN_EULER_LAGRANGE_task_1_sol.pdf)
+* [Task 2](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/13_DYN_EULER_LAGRANGE/solution/TM_13_DYN_EULER_LAGRANGE_task_2_sol.md)
+* [Task 2 code](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/13_DYN_EULER_LAGRANGE/solution/TM_13_DYN_EULER_LAGRANGE_task_2_sol.ipynb)
+
+## Lab 14
+[Lab 14 (Principle of virtual displacements; General Equation of Dynamics (D'lambert-Lagrange))](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/14_DYN_VIRT_DISP_GEN_EQN/TM_14_DYN_VIRT_DISP_GEN_EQN.pdf)
+### Tasks solution
+* [Task 1](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/14_DYN_VIRT_DISP_GEN_EQN/solution/TM_14_DYN_VIRT_DISP_GEN_EQN_task_1_sol.pdf)
+* [Task 3](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/labs/14_DYN_VIRT_DISP_GEN_EQN/solution/TM_14_DYN_VIRT_DISP_GEN_EQN_task_3_sol.pdf)
+
+
 # Week HWs
 * [HW 1 (Particle kinematics; Rotational motion; Plane motion, simple)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_1_KIN_PART_ROT_PLANE1/HW_1_KIN_PART_ROT_PLANE1.pdf)
 * [HW 2 (Plane motion, complex)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_2_KIN_PLANE2/HW_2_KIN_PLANE2.pdf)
@@ -71,9 +96,15 @@ This repository contains regularly updated course materials. You can use lab sli
 * [HW 4 (Statics: multiple bodies, 3D)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_4_STATICS/HW_4_STATICS.pdf)
 * [HW 5 (Particle dynamics for inertial systems; Particle dynamics for non inertial systems)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_5_PART_INERT_NONINERT/HW_5_PART_INERT_NONINERT.pdf)
 * [HW 6 (Motion of the centre of mass of a system; Change of Principal Angular momentum of a system)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_6_COM_LINEAR_ANGULAR/HW_6_COM_LINEAR_ANGULAR.pdf)
+* [HW 7 (Theorem on the Change of Kinetic Energy of a System; Newton-Euler method)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_7_KIN_ENERGY_NEWTON_EULER/HW_7_KIN_ENERGY_NEWTON_EULER.pdf)
+* [HW 8 (Euler-Lagrange equation)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/HW_8_EULER_LAGRANGE/HW_8_EULER_LAGRANGE.pdf)
 
 # Big HWs
 * [Big HW 1 (Particle kinematics)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/BigHW_1/TM_BigHW_1.pdf)
+* [Big HW 2 (Inverse dynamics)](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/HWs/BigHW_2/TM_BigHW_2.pdf)
+
+# Extra Material
+* [Sheet with all methods from the course](https://github.com/Lupasic/TheorMech_Inno_2024/blob/main/dynamics_methods_overview/dynamics_methods_overview.pdf)
 
 # For contributors
 
